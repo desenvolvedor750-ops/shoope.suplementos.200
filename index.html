@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Achadinhos Shopee</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #ee4d2d;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 10px 0 15px;
+            font-size: 17px;
+        }
+
+        .aviso {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ee4d2d;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .inicio h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .inicio p {
+            color: #666;
+        }
+
+        .galeria {
+            width: 92%;
+            max-width: 1200px;
+            margin: 30px auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .produto {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            padding-bottom: 20px;
+            text-align: center;
+            min-width: 0;
+        }
+
+        .produto img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+            display: block;
+            background: white;
+            padding: 10px;
+        }
+
+        .produto h3 {
+            margin: 15px 10px 8px;
+            font-size: 18px;
+        }
+
+        .produto p {
+            margin: 8px 10px;
+            color: #666;
+        }
+
+        .link-produto {
+            text-align: center;
+            margin: auto 10px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .link-titulo {
+            display: flex;
+            width: 100%;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+            background: #ee4d2d;
+            color: white;
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .seta {
+            font-size: 38px;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #ee4d2d;
+        }
+
+        .link {
+            display: inline-block;
+            color: #ee4d2d;
+            font-weight: bold;
+            text-decoration: none;
+            word-break: break-word;
+            margin-top: 5px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .whatsapp a {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 1000px) {
+            .galeria {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .aviso {
+                font-size: 16px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .galeria {
+                width: 94%;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .produto img {
+                height: 260px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🛍️ Achadinhos Shopee  </h1>
+
+        <p>
+            Produtos incríveis e ofertas selecionadas
+            suplementos produtos equipamentos
+        </p>
+
+        <div class="aviso">
+            COMPRE ACESSANDO LINK DE AFILIADO LOGO ABAIXO DAS IMAGENS
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#produtos">Produtos</a>
+
+    </nav>
+
+    <section class="inicio" id="inicio">
+
+        <h2>🔥 Achadinhos da Shopee</h2>
+
+        <p>
+            Confira nossos produtos selecionados.
+        </p>
+
+    </section>
+
+    <section class="galeria" id="produtos">
+
+
+        <!-- 1 - WHEY PROTEIN -->
+
+        <div class="produto">
+
+            <img src="./suplementos.jpeg" alt="Whey Ultra Protein em refil de 900 g">
+
+            <h3>Whey Ultra Protein Refil 900g </h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/3B7xKxg89f"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/3B7xKxg89f
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 2 - MULTIVITAMINICO -->
+
+        <div class="produto">
+
+            <img src="./foto.A.jpeg" alt="Multivitamínico com 120 cápsulas">
+
+            <h3>Multivitamínico 120 Cápsulas</h3>
+
+            <p> confira este produto</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/9V20tEt3up"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/9V20tEt3up
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 3 - CREATINA FTW -->
+
+        <div class="produto">
+
+            <img src="./foto.40.jpeg" alt="Creatina Ultra FTW em pote de 300 g">
+
+            <h3>Creatina Ultra Pote 300g - FTW</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/7ptmwZEYYg"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/7ptmwZEYYg
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 4 - KIT CREATINA E COQUETELEIRA -->
+
+        <div class="produto">
+
+            <img src="./foto.20.jpeg" alt="Kit de creatina monohidratada com coqueteleira">
+
+            <h3>Kit Creatina Monohidratada 100% Pura 300g + Coqueteleira</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/7KxWM7i8XM"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/7KxWM7i8XM
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 5 - KIT 3 CAMISETAS -->
+
+        <div class="produto">
+
+            <img src="./kit%203.jpeg" alt="Kit com 3 camisetas dry fit">
+
+            <h3>Kit 3 Camisetas Dry Fit</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/9APAYWSu14"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/9APAYWSu14
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="produto">
+
+            <img src="./foto.60.jpeg" alt="Kit com 4 camisetas dry fit">
+
+            <h3>Kit 4 Camisetas Dry Fit Masculinas</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/W7CFbIzCr"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/60RxfQul9S
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7 - BICICLETA ERGOMETRICA -->
+
+        <div class="produto">
+
+            <img src="./foto.50.jpeg" alt="Bicicleta ergométrica">
+
+
+            <h3>bicicleta bike ergometrica spinning     </h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/6L4zDEZkop"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/8AWSEjUU9y
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mini Stepper Step simulador de Caminhada Ginástica -->
+
+        <div class="produto">
+
+            <img src="./foto.80.jpeg" alt="Escaladora de escadas">
+            <h3>  Simulador de Escada Stepper Fitness  </h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/9fLRDAhkW7"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/8fSir5jDnh
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+       <footer>
+
+        <p>🛍️ Achadinhos Shopee</p>
+
+        <p>Produtos e ofertas selecionadas</p>
+
+        <p>© 2026 - Todos os direitos reservados</p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
+
+  
+      
